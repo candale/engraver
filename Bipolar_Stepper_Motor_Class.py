@@ -2,9 +2,9 @@ import RPi.GPIO as GPIO
 import time
 
 #sequence for a1, b2, a2, b1
-#phase_seq=[[1,1,0,0],[0,1,1,0],[0,0,1,1],[1,0,0,1]];
+phase_seq=[[1,1,0,0],[0,1,1,0],[0,0,1,1],[1,0,0,1]];
 #full step sequence. maximum torque
-phase_seq=[[1,0,0,0],[1,1,0,0],[0,1,0,0],[0,1,1,0],[0,0,1,0],[0,0,1,1],[0,0,0,1],[1,0,0,1]]
+#Phase_seq=[[1,0,0,0],[1,1,0,0],[0,1,0,0],[0,1,1,0],[0,0,1,0],[0,0,1,1],[0,0,0,1],[1,0,0,1]]
 #half-step sequence. double resolution. But the torque of the stepper motor is not constant 
 num_phase=len(phase_seq);
 

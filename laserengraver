@@ -38,14 +38,14 @@ args = parser.parse_args()
 
 GPIO.setmode(GPIO.BOARD)
 
-MX=Bipolar_Stepper_Motor(22,18,24,26);     #pin number for a1,a2,b1,b2.  a1 and a2 form coil A; b1 and b2 form coil B
+MX=Bipolar_Stepper_Motor(22, 18, 16, 12)     #pin number for a1,a2,b1,b2.  a1 and a2 form coil A; b1 and b2 form coil B
 
-MY=Bipolar_Stepper_Motor(10,8,12,16);       
+MY=Bipolar_Stepper_Motor(15, 11, 13, 7);       
 
-Laser_switch=3;
+Laser_switch = 26;
 
-dx=0.075; #resolution in x direction. Unit: mm
-dy=0.075; #resolution in y direction. Unit: mm
+dx=0.2; #resolution in x direction. Unit: mm
+dy=0.2; #resolution in y direction. Unit: mm
 
 if (args.speed > 0):
 	Engraving_speed=args.speed; #unit=mm/sec=0.04in/sec
